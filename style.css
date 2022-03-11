@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	list-style-type: none;
+}
+header{
+	height: 10vh;
+	width: 100%;
+	background-color: lightpink;
+	padding: 0px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo a{
+	font-size: 30px;
+}
+ul{
+	display: flex;
+	justify-content: center;
+}
+li a{
+	padding: 20px;
+}
