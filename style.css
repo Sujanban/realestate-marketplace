@@ -28,5 +28,8 @@ ul{
 	justify-content: center;
 }
 li a{
-	padding: 20px;
+	padding: 10px;
+	margin: 5px;
+	background-color: white;
+	border-radius: 2px;
 }
