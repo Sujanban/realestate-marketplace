@@ -164,37 +164,29 @@ header .icons #menu-bars{
 .rental_banner{
     display: flex;
     padding: 5rem 10%;
-    column-gap: 2rem;
-    align-items: center;
-}
-.rental_banner .rental_banner_img{
-    height: 400px;
-    min-width: 50%;
-    overflow: hidden;
-    padding: 0rem 7rem;
-    background-image: url(heroimg.jpg);
-    background-position: center;
+
+    }
+.rental_banner_img{
+    padding: 2rem;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem;
     background-size: cover;
-    /*width: 50%;*/
+    background-position: center;
+    background-image: url(heroimg.jpg);
 }
-.rental_banner .rental_banner_info{
-    /*background-color: lightgrey;*/
-    padding: 0rem 7rem;
-    /*width: 50%;*/
+.rental_banner_info{
+    width: 100%;
+    padding: 3rem;
 }
-.rental_banner .rental_banner_info h1{
+.rental_banner_info h1{
     font-size: 3rem;
-    padding-bottom: 1.5rem;
+    padding: 2rem 0rem;
 }
-.rental_banner .rental_banner_info p{
+.rental_banner_info p{
     font-size: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
 }
-
-
-
-
-
 
 
 
@@ -235,7 +227,13 @@ header .icons #menu-bars{
     }
    .rental_banner{
     display: grid;
+    grid-auto-rows: initial;
    }
+   .rental_banner .rental_banner_img,
+   .rental_banner .rental_banner_info{
+    width: 100%;
+    padding: 1rem 5%;
+}
 }
 
 
