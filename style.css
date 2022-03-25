@@ -63,6 +63,7 @@ header .navbar a{
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 3rem;
+    color: black;
 }
 
 header .navbar a.active,
@@ -175,31 +176,60 @@ header .icons #menu-bars{
 
 /*----------------------------------rental_banner-------------------------------------*/
 .rental_banner{
-    display: flex;
-    padding: 2.5rem 10%;
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*padding: 2.5rem 10%;*/
 
     }
 .rental_banner_img{
     width: 100%;
-    min-height: 330px;
+    /*background-color: #E9EAF2;*/
     padding: 2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.rental_banner_img img{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
-    background-position: center;
-    background-image: url(heroimg.jpg);
 }
 .rental_banner_info{
+    /*background-color: #171F2D;*/
     width: 100%;
     padding: 1rem 2rem;
 }
 .rental_banner_info h1{
     padding: 1rem 0rem;
+    /*color: white;*/
+    color: black;
 }
 .rental_banner_info p{
     font-size: 1rem;
     padding-bottom: 2rem;
+    color: #8E9785;
 }
 
-
+/************************************service section starts here***************************/
+.service{
+    padding: 5rem;
+    line-height: 4rem;
+    text-align: center;
+    background-color: #E9EAF2;
+}
+.service .service_info h1{
+    font-size: 2.5rem;
+}
+.service .service_img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.service .service_img img{
+    height: 80px;
+    width: 80px;
+}
 
 
 
@@ -243,10 +273,16 @@ header .icons #menu-bars{
     .home .home-slider .slide .content h3{
         font-size: 5rem;
     }
-
+    .hero .hero-info h1{
+        font-size: 2rem;
+    }
+    .stats > div h1{
+        font-size: 1.4rem;
+    }
    .rental_banner{
         display: grid;
-        grid-auto-rows: initial;
+        grid-template-columns: 1fr;
+        margin: 2rem;
    }
    .rental_banner .rental_banner_img,
    .rental_banner .rental_banner_info{
@@ -255,10 +291,24 @@ header .icons #menu-bars{
     }
     .rental_banner .rental_banner_info h1{
         padding: 0.75rem 0rem;
+        font-size: 1.75rem;
     }
     .rental_banner_info p{
         font-size: 1rem;
         padding-bottom: 1rem;
+    }
+    .service{
+        padding: 2.5rem;
+        line-height: 2rem;
+    }
+    .service .service_info h1{
+        font-size: 1.75rem;
+    }
+    .service .service_img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        line-height: 4rem;
+        padding-top: 2rem;
     }
 }
 
@@ -302,6 +352,14 @@ header .icons #menu-bars{
     .rental_banner_info p{
         font-size: 0.75rem;
         padding-bottom: 1rem;
+    }
+    .service .service_img{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .service{
+        padding: 2.5rem;
+        line-height: initial;
     }
 }
 
