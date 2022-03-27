@@ -52,7 +52,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
     height: 10vh;
 }
 
@@ -115,7 +115,7 @@ header .icons #menu-bars {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(1, 4, 42, 0.3), rgba(0, 0, 0, 0.5)), url(../image/heroimg.jpg);
+    background-image: linear-gradient(to left, rgba(1, 4, 42, 0.3), rgba(0, 0, 0, 0.65)), url(../image/heroimg1.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -193,6 +193,7 @@ header .icons #menu-bars {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2.5rem 10%;
+    background-color: #E9EAF2;
 
 }
 
@@ -307,7 +308,7 @@ header .icons #menu-bars {
     .rental_banner {
         display: grid;
         grid-template-columns: 1fr;
-        margin: 2rem;
+        padding: 2rem;
     }
 
     .rental_banner .rental_banner_img,
@@ -340,6 +341,9 @@ header .icons #menu-bars {
         grid-template-columns: repeat(2, 1fr);
         line-height: 4rem;
         padding-top: 2rem;
+    }
+    .footer_main .footer_info{
+        padding-left: 1rem;
     }
     footer .footer_secondary{
         padding-top: 1rem;
@@ -410,6 +414,12 @@ header .icons #menu-bars {
         padding: 2.5rem;
         line-height: initial;
     }
+    .footer_main .footer_newsletter label input{
+        width: 50%;
+    }
+    footer .footer_main{
+        padding: 3rem 0.5rem!important;
+    }
 }
 
 
@@ -450,14 +460,12 @@ header .icons #menu-bars {
     padding-bottom: 3rem;
 }
 
-#signin .logo {
-    margin-bottom: 8vh;
-}
-
-#signin .logo h1 {
+#signin .logo a {
     font-weight: 300;
     font-size: 2.5rem;
     font-weight: bolder;
+    color: black;
+    padding-bottom: 2rem;
 }
 
 #signin label {
@@ -636,7 +644,7 @@ header .icons #menu-bars {
 /*****************************************Footer section start*****************************************/
 
 
-footer {
+.footer {
     margin: none;
     background-color: #0D141E;
     color: white;
@@ -646,7 +654,7 @@ footer {
 
 }
 
-footer .footer_main {
+.footer .footer_main {
 
     border-bottom: 1px solid white;
     display: flex;
@@ -675,7 +683,7 @@ footer .footer_main {
     /*flex-direction:column; */
 
 }
-.link_column>div {
+.footer_link .link_column> div {
     display: grid;
     padding-right: 2rem;
 }
@@ -736,4 +744,77 @@ footer .footer_main {
 .footer_secondary p i:hover{
     color: white;
     background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.featured_listing{
+    text-align: center;
+    padding: 3.5rem 7%;
+}
+.featured_listing h1 {
+    padding-bottom: 3.5rem;
+    font-size: 2.5rem;
+}
+.featured_listing .card a{
+    padding-bottom: 3.5rem;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+}
+.featured_listing .featured_listing_card{
+    width: 100%;
+}
+
+.featured_listing .featured_listing_card img{
+    width: 100%;
+    border-radius: 6px;
+}
+.featured_listing .featured_listing_card .featured_listing_card_info{
+    background-color: whitesmoke;
+    text-align: left;
+    padding: 0.5rem;
+}
+.featured_listing .featured_listing_card .featured_listing_card_info p{
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid black;
+}
+@media (max-width: 820px){
+    .card{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 400px){
+    .card{
+        grid-template-columns: 1fr;
+    }
 }
