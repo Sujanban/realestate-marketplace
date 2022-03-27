@@ -192,7 +192,7 @@ header .icons #menu-bars {
     /*display: flex;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*padding: 2.5rem 10%;*/
+    padding: 2.5rem 10%;
 
 }
 
@@ -232,7 +232,7 @@ header .icons #menu-bars {
 
 /************************************service section starts here***************************/
 .service {
-    padding: 5rem;
+    padding: 7rem 5rem;
     line-height: 4rem;
     text-align: center;
     background-color: #E9EAF2;
@@ -342,10 +342,11 @@ header .icons #menu-bars {
         padding-top: 2rem;
     }
     footer .footer_secondary{
-      padding-top: 1rem
+        padding-top: 1rem;
     }
     .footer_newsletter{
-      width: 80%;
+        margin-top: 1rem;
+        width: 80%;
     }
 }
 
@@ -588,8 +589,6 @@ header .icons #menu-bars {
 }
 
 .secondary-btn:hover {
-    /*border-color: #ff7b39;
-  color: #ff7b39;*/
     box-shadow: inset 30rem 0 0 0 black;
     color: white;
 }
@@ -639,7 +638,7 @@ header .icons #menu-bars {
 
 footer {
     margin: none;
-    background: black;
+    background-color: #0D141E;
     color: white;
     /*padding:2rem;*/
     padding: auto 7%;
@@ -657,8 +656,16 @@ footer .footer_main {
     padding: 7rem 0.5rem;
 
 }
+.footer_link .link_column a,
 .footer_main .footer_info p{
   font-size: 0.9rem;
+  color: #A0A2AD;
+  font-weight: bolder;
+}
+.footer_main .footer_info a{
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;
 }
 .link_column {
     /*border: 1px solid red;*/
@@ -668,35 +675,65 @@ footer .footer_main {
     /*flex-direction:column; */
 
 }
-
-.link_column a {
-    color: white;
-    font-size: 0.8rem;
-
-}
-
 .link_column>div {
     display: grid;
     padding-right: 2rem;
-
-
 }
 
 .footer_main .email {
     padding: .8em;
-    border-radius: 100rem;
-    width: 100%;
+    /*border-radius: 100rem;*/
+    border-radius: 99rem 0rem 0rem 99rem;
+    width: 70%;
     height: 3rem;
     margin: .5rem auto;
 }
+.footer_main label button{
+    padding: .8em;
+    border-radius: 0rem 99rem 99rem 0rem;
+    height: 3rem;
+    background-color: royalblue;
+    color: white;
+    box-shadow: inset 0 0 0 0 black;
+    transition: ease-out 0.5s;
+}
 
+.footer_main label button:hover {
+        box-shadow: inset 20rem 0 0 0 black;
+        border: 1px solid white;
+        color: white;
+    }
+.footer_newsletter > div{
+    color: #A0A2AD;
+}
+.footer_newsletter > div input{
+    background-color: transparent;
+}
+.footer_newsletter a {
+    color: #A0A2AD;
+    text-decoration: underline;
+}
 .footer_secondary {
     padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .footer_secondary p {
     /*align-items: center;*/
     text-align: center;
-
-
+}
+.footer_secondary p i{
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+}
+.footer_secondary p i:hover{
+    color: white;
+    background-color: black;
 }
