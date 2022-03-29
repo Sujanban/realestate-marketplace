@@ -759,7 +759,8 @@ header .icons #menu-bars {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') no-repeat center center / cover;
+    background: linear-gradient(to left, rgba(1, 4, 42, 0.3), rgba(0, 0, 0, 0.65)), url(../image/login_img.jpg) no-repeat center center / cover;
+    /*background: url(../image/login_img.jpg) no-repeat center center / cover;*/
     height: 100vh;
     text-align: center;
 }
