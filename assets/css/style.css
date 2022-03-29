@@ -6,6 +6,7 @@
 
 * {
     font-family: 'Nunito', sans-serif;
+    /*box-sizing: border-box;*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +15,8 @@
     border: none;
     transition: all .2s linear;
 }
+
+
 
 a {
     font-size: 1rem;
@@ -358,6 +361,9 @@ header .icons #menu-bars {
     box-shadow: inset 0 0 0 0 black;
     transition: ease-out 0.5s;
 }
+#subbtn{
+    display: inline-block;
+}
 
 .footer_main label button:hover {
         box-shadow: inset 20rem 0 0 0 black;
@@ -646,6 +652,7 @@ header .icons #menu-bars {
 
 
 /*************************************Contact Page starts here********************************/
+
 .contact_banner{
     height: 40vh;
     margin-top: 10vh;
@@ -720,10 +727,10 @@ header .icons #menu-bars {
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-*{
+{
     box-sizing: border-box;
 }
-body{
+#body {
     background: #f6f5f7;
     display: flex;
     flex-direction: column;
@@ -733,8 +740,7 @@ body{
     font-family: 'Montserrat' ,'sans-serif';
     margin: -20px 0 50px;
 }
-
-h1{
+.form-container  h1{
     font-weight: bold;
     margin: 0;
 }
@@ -786,7 +792,7 @@ a{
     margin: 8px 0;
     width: 100%;
 }
-button{
+ button{
     border-radius: 20px;
     border:1px solid royalblue;
     background: royalblue;
