@@ -26,7 +26,7 @@ a {
     background-color: royalblue;
     cursor: pointer;
     box-shadow: inset 0 0 0 0 black;
-    transition: ease-out 0.5s;
+    transition: ease-out 0.4s;
 }
 
 .btn:hover {
@@ -264,7 +264,7 @@ header .icons #menu-bars {
     font-size: 2.5rem;
 }
 .featured_listing .card a{
-    padding-bottom: 3.5rem;
+    padding-bottom: 1rem;
     font-size: 1.5rem;
     color: black;
     font-weight: bolder;
@@ -288,6 +288,10 @@ header .icons #menu-bars {
     background-color: whitesmoke;
     text-align: left;
     padding: 0.5rem;
+}
+.featured_listing .featured_listing_card .featured_listing_card_info .property_title{
+    display: flex;
+    justify-content: space-between;
 }
 .featured_listing .featured_listing_card .featured_listing_card_info p{
     padding-bottom: 0.4rem;
@@ -906,3 +910,65 @@ header .icons #menu-bars {
 
 
 
+/*************************************About Page starts here********************************/
+.about_banner{
+    height: 40vh;
+    margin-top: 10vh;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgba(1, 4, 42, 0.3), rgba(0, 0, 0, 0.5)), url(../image/contact_banner.jpg);
+}
+.about_banner > div{
+    color: white;
+}
+.about_banner > div i{
+    padding-top: 1.5rem;
+    font-weight: 1000;
+    text-decoration: none;
+}
+.about_banner > div i a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+/*************************************buy Page starts here********************************/
+.buy_banner{
+    height: 40vh;
+    margin-top: 10vh;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgba(1, 4, 42, 0.3), rgba(0, 0, 0, 0.5)), url(../image/contact_banner.jpg);
+}
+.buy_banner > div{
+    color: white;
+}
+
+.buy_banner form {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.buy_banner form .search {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    width: 80%;
+}
+
+
+/*************************************Sell Page starts here********************************/
+.sell_wraper .sell_info{
+    padding: 5rem 7%;
+    text-align: center;
+}
+.sell_wraper .sell_info h1{
+    padding: 1rem;
+}
