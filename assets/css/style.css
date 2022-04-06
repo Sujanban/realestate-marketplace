@@ -864,8 +864,8 @@ header .icons #menu-bars {
     background-color: white;
 }
 .contact .service .service_img p{
-    font-size: 0.9rem;
-    color: #A68C98;
+    font-size: 1rem;
+    color: black;
 }
 .main_contact{
     display: grid;
@@ -971,4 +971,35 @@ header .icons #menu-bars {
 }
 .sell_wraper .sell_info h1{
     padding: 1rem;
+}
+
+
+
+
+
+/*************************************Sell Page starts here********************************/
+
+.sell_wraper .sell_info{
+    padding: 5rem 7%;
+    text-align: center;
+}
+.sell_wraper .sell_info h1{
+    padding: 1rem;
+}
+.sell_card_wraper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 2rem;
+    background-color: white;
+    text-align: center;
+}
+.sell_card_wraper .sell_card{
+    padding-top: 1rem;
+    /*border: 2px solid black;*/
+}
+.sell_card_wraper .sell_card h2{
+    padding-bottom: 1rem;
+}
+.sell_card_wraper .sell_card p{
+    padding: 0rem 1rem;
 }
