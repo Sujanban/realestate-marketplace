@@ -614,8 +614,11 @@ header .icons #menu-bars {
         height: 400px;
     }
     .signup_form form{
-    width: 80%!important;
-    justify-content: center;
+        width: 80%!important;
+        justify-content: center;
+    }
+    #signin, .or, .links {
+        width: 90%!important;
     }
 }
 
@@ -652,7 +655,6 @@ header .icons #menu-bars {
     .signup_image h1{
     padding: 2rem;
     color: white;
-
 }
 
 
