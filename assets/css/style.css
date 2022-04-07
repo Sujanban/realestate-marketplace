@@ -523,7 +523,11 @@ header .icons #menu-bars {
         grid-template-columns: 1fr!important;
     }
     .signup_image{
-        display: none;
+        display: none!important;
+    }
+    .signup_form form{
+        width: 65%!important;
+        justify-content: center;
     }
 }
 
@@ -609,6 +613,10 @@ header .icons #menu-bars {
     .main_contact .map iframe{
         height: 400px;
     }
+    .signup_form form{
+    width: 80%!important;
+    justify-content: center;
+    }
 }
 
 
@@ -641,6 +649,17 @@ header .icons #menu-bars {
     #main-footer {
         padding-top: 1rem;
     }
+    .signup_image h1{
+    padding: 2rem;
+    color: white;
+
+}
+
+
+
+
+
+
 
 }
 
@@ -875,7 +894,7 @@ header .icons #menu-bars {
 }
 .signup_form form h1{
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
 }
 .signup_form label {
     font-size: 0.9rem;
@@ -917,7 +936,7 @@ header .icons #menu-bars {
 .signup_form .or {
     display: flex;
     flex-direction: row;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
     align-items: center;
 }
 
