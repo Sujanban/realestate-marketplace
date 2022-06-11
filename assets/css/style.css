@@ -405,6 +405,7 @@ header .icons #menu-bars {
 
 
 /*************************************MEDIA QUERY starts here********************************/
+
 @media (max-width:820px) {
 
     header .icons #menu-bars {
@@ -1111,8 +1112,8 @@ header .icons #menu-bars {
 
 
 
-/*************************************Sell Page starts here********************************/
 
+/*************************************Sell Page starts here********************************/
 .sell_wraper .sell_info{
     padding: 5rem 7%;
     text-align: center;
@@ -1136,4 +1137,47 @@ header .icons #menu-bars {
 }
 .sell_card_wraper .sell_card p{
     padding: 0rem 1rem;
+}
+
+
+
+
+/*************************************product Page starts here********************************/
+
+.outer-slider{
+    text-align: center;
+    padding: 1rem 7%;
+    margin-top: 10vh;
+}
+.product_info{
+    padding: 1rem 7% 6rem 7%;
+}
+.product_info .property_feature{
+    align-items: center;
+    display: flex;
+}
+.product_info h3{
+    padding: 2rem 0rem;
+}
+.property_features{
+    border-radius: 20px;
+}
+
+.property_feature{
+    background-color: #DBF6FE;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+}
+.product_contact h3{
+    padding: 3rem 0rem 1rem 0rem;
+}
+.product_contact p{
+    padding: 2rem;
+    background-color: #edd1b9;
+}
+.product_contact p a{
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: underline;
 }
