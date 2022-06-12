@@ -257,11 +257,11 @@ header .icons #menu-bars {
 /*******************************************Feature listing statrts here*******************************************/
 .featured_listing{
     text-align: center;
-    padding: 3.5rem 7%;
+    padding: 5rem 7%;
 }
 .featured_listing h1 {
     padding-bottom: 3.5rem;
-    font-size: 2.5rem;
+    padding-bottom: 1rem;
 }
 .featured_listing .card a{
     padding-bottom: 1rem;
@@ -274,6 +274,7 @@ header .icons #menu-bars {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
 }
 .featured_listing .featured_listing_card{
@@ -530,6 +531,12 @@ header .icons #menu-bars {
         width: 65%!important;
         justify-content: center;
     }
+    .goals_info{
+    grid-template-columns: 1fr !important;
+    }
+    .goals_info .goal_img{
+        display: none;
+    }
 }
 
 
@@ -654,11 +661,12 @@ header .icons #menu-bars {
         padding-top: 1rem;
     }
     .signup_image h1{
-    padding: 2rem;
-    color: white;
+        padding: 2rem;
+        color: white;
+    }
+    .member_info{
+       grid-template-columns: 1fr!important;
 }
-
-
 
 
 
@@ -1069,9 +1077,66 @@ header .icons #menu-bars {
     color: white;
     font-weight: bolder;
 }
-
-
-
+.goals_info{
+    padding: 5rem 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+.goals_info .goals{
+    line-height: 2;
+}
+.goals_info .goal_img{
+    text-align: center;
+}
+.member_infos{
+    padding: 3rem 7%;
+    background-color: #E9EBF3;
+}
+.member_infos h1{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.member_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.member_info .user{
+    padding: 2rem;
+}
+.member_info .user img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.member_info .user p{
+    padding-top: .3rem;
+    color: steelblue;
+}
+/*.member_info .user p i{
+    padding: .5rem;
+    font-size: 25px;
+}
+.member_info .user p i: hover{
+    color: blue;
+}*/
+.member_info .user p i{
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background-color: royalblue;
+    color: white;
+}
+.member_info .user p i:hover{
+    color: white;
+    background-color: black;
+}
 /*************************************buy Page starts here********************************/
 .buy_banner{
     height: 40vh;
@@ -1159,25 +1224,44 @@ header .icons #menu-bars {
 .product_info h3{
     padding: 2rem 0rem;
 }
-.property_features{
+.product_info .property_features{
     border-radius: 20px;
 }
 
-.property_feature{
+.product_info .property_feature{
     background-color: #DBF6FE;
     border-bottom: 2px solid black;
     border-radius: 5px;
 }
-.product_contact h3{
+.product_info .product_contact h3{
     padding: 3rem 0rem 1rem 0rem;
 }
-.product_contact p{
+.product_info .product_contact p{
     padding: 2rem;
     background-color: #edd1b9;
 }
-.product_contact p a{
+.product_info .product_contact p a{
     font-weight: bold;
     font-size: 16px;
     color: black;
     text-decoration: underline;
+}
+
+
+
+
+
+/*************************************404 Page starts here********************************/
+.e404_info {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.e404_info img{
+    padding: 2rem;
+}
+.e404_info p{
+    padding: 1rem;
 }

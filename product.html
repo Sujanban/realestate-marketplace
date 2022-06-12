@@ -13,7 +13,7 @@
 	<header>
         <a href="index.html" class="logo">RealEsto</a>
         <nav class="navbar">
-            <a class="active" href="index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="buy.html">Buy</a>
             <a href="sell.html">Sell</a>
             <a href="rent.html">Rent</a>
@@ -119,7 +119,7 @@
         </div>
         <div class="footer_secondary">
             <p>Realesto &copy 2022. All right reserved.</p>
-            <p></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i><i class="fa fa-linkedin"></i></p>
+           <!--  <p></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i><i class="fa fa-linkedin"></i></p> -->
         </div>
     </footer>
     <!-- -----------------------------------------footer section ends here---------------------------------- -->
@@ -130,23 +130,26 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 	<script type="text/javascript">
 	$('.owl-carousel').owlCarousel({
+    // items: 4,
     loop:true,
     margin:10,
-    height:5,
     responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
     responsive:{
         0:{
             items:1,
             nav:false
         },
         600:{
-            items:2,
+            items:1,
             nav:false
         },
         1000:{
             items:2,
             nav:false,
-            loop:false
+            loop:true
         }
     }
 })
