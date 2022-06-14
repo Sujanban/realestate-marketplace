@@ -1265,3 +1265,67 @@ header .icons #menu-bars {
 .e404_info p{
     padding: 1rem;
 }
+
+     /*-----------------------------------------CSS for rent.html------------------------------*/
+.rent-container{
+    background-color: aquamarine;
+    padding: 3rem;
+    text-align: center;
+    
+}
+
+.rent-container .card{
+    background: white ;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 10px 2px #b2bec3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+/*    display: grid;*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    margin-bottom: 1rem;
+}
+.card .title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.card img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card .text{
+    text-align: left;
+    margin:0 0 .5rem 2rem;
+    
+}
+.rent-btn{
+    background-color: brown;
+    border:none;
+    padding: 1rem;
+    border-radius:5px;
+    font-weight: bold;
+}
+.rent-btn:hover{
+    box-shadow: 0px 5px 5px #b2bec3;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
